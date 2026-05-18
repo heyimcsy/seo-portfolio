@@ -5,7 +5,12 @@
       "mcp__180d3c97-08d9-49f5-9d8a-02794dce9032__get_design_context",
       "mcp__180d3c97-08d9-49f5-9d8a-02794dce9032__use_figma",
       "mcp__180d3c97-08d9-49f5-9d8a-02794dce9032__get_screenshot",
-      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --no-turbopack)"
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --no-turbopack)",
+      "Bash(npm install *)",
+      "Bash(mkdir -p /Users/bicmac/development/seo-portfolio/app/portfolio/\\\\[slug\\\\])",
+      "Bash(mkdir -p /Users/bicmac/development/seo-portfolio/.claude)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm run *)"
     ]
   }
 }
