@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__180d3c97-08d9-49f5-9d8a-02794dce9032__get_metadata",
+      "mcp__180d3c97-08d9-49f5-9d8a-02794dce9032__get_design_context",
+      "mcp__180d3c97-08d9-49f5-9d8a-02794dce9032__use_figma",
+      "mcp__180d3c97-08d9-49f5-9d8a-02794dce9032__get_screenshot",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --no-turbopack)"
+    ]
+  }
+}
