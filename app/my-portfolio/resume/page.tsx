@@ -1,6 +1,7 @@
-import { getResume } from "@/lib/content";
+import {getResume} from "@/lib/content";
 import ProfileImage from "@/components/resume/ProfileImage";
-import type { Experience, Project, Education, Activity, Certificate } from "@/types";
+import {Activity, Certificate, Education, Experience, Project} from "@/types";
+
 
 export default function ResumePage() {
   const resume = getResume();

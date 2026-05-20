@@ -1,18 +1,18 @@
 {
   "basicInfo": {
-    "name": "이름",
-    "photo": "/images/profile.jpg",
-    "email": "example@email.com",
+    "name": "최서윤",
+    "photo": "/images/potatoProfile.jpeg",
+    "email": "cinnamon68@daum.net",
     "phone": "010-4122-8286",
     "github": "https://github.com/heyimcsy",
     "blog": "",
     "location": "서울"
   },
-  "introduction": "안녕하세요. 사용자 경험을 중심으로 생각하는 프론트엔드 개발자입니다.\n문제를 발견하고 해결하는 과정에서 성취감을 느끼며, 팀과 함께 성장하는 것을 좋아합니다.\n새로운 기술을 빠르게 습득하고 실무에 적용하는 것을 즐깁니다.",
+  "introduction": "유연하면서 새로운 도전을 마다하지 않는 부드러운 나무숲 같은 개발자 입니다.",
   "skills": {
-    "frontend": ["React", "Next.js", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS"],
-    "backend": ["Node.js", "Express"],
-    "database": ["PostgreSQL", "MongoDB"],
+    "frontend": ["React", "Next.js", "TypeScript", "JavaScript", "Tanstack-query", "Tailwind CSS"],
+    "backend": ["Node.js", "Express", "Java", "Spring Boot"],
+    "database": ["PostgreSQL", "MySGL"],
     "tools": ["Git", "GitHub", "Figma", "Vercel"]
   },
   "experiences": [
@@ -21,10 +21,11 @@
       "position": "프론트엔드 개발자",
       "startDate": "2025.06",
       "endDate": "2025.08",
-      "description": "서비스 개요 및 담당 업무 설명",
+      "description": "사고와 상해를 입은 유저가 편하게 손해배상을 청구하고 받을 수 있도록 해주는 사업의 회사입니다.",
       "achievements": [
-        "주요 기능 개발 및 성능 개선",
-        "코드 리뷰 문화 정착 기여"
+        "병원 전체 조회 API 단일 제공 환경에서 Zustand를 활용해 클라이언트 단에 데이터를 캐싱하고, 단일 병원 조회·정렬·필터 기능을 프론트엔드에서 전량 구현했습니다. 백엔드 스펙 변경 통보 이후 2일 이내 전면 적용하여 서비스 일정 지연 없이 완료했습니다.",
+        "카카오맵 API 연동 시 지도 이동 이벤트에 500ms 디바운스를 적용하여 불필요한 API 호출을 억제하고 비용을 절감했으며, 렌더링 중 이미지 깨짐 현상도 함께 개선했습니다.",
+        "공식 홈페이지 내 신규 페이지 개발 중 Header·Footer가 전 페이지에 하드코딩되어 있음을 자체적으로 발견하여, 별도 지시 없이 Layout 컴포넌트로 리팩토링했습니다. 예외 페이지는 조건 분기로 처리하여 코드 중복을 제거하고 유지보수 구조를 개선했습니다."
       ]
     },
     {
@@ -32,39 +33,58 @@
       "position": "프론트엔드 개발자",
       "startDate": "2023.09",
       "endDate": "2024.11",
-      "description": "서비스 개요 및 담당 업무 설명",
+      "description": "AMR(Autonomous Mobile Robot, 자율주행 물류로봇) 을 개발하는 회사입니다.",
       "achievements": [
-        "주요 기능 개발 및 성능 개선",
-        "코드 리뷰 문화 정착 기여"
+        "Three.js WebGLRenderer와 HTML5 Canvas를 연동하여 3D 맵 이미지 편집 기능을 구현했습니다.",
+        "FMS 전체 버그 개선 프로젝트에서 프론트엔드 영역 버그 154개를 단독으로 담당했습니다. 일부 화면은 전면 재설계하는 방식으로 접근하여 1개월 반 만에 전량 수정 완료했습니다.",
+        "Zone Management 페이지 개발 시 3개 분량의 기능이 단일 화면에 집약되어 사용성이 저하된 구조를 발견했습니다. 직접 화면 도안과 플로우를 설계하여 담당자에게 선제안하였고, 관계자 검토 후 채택되어 해당 설계안 기준으로 구현했습니다."
       ]
     }
   ],
   "projects": [
     {
-      "name": "프로젝트명",
-      "description": "프로젝트 한 줄 소개",
-      "techStack": ["React", "TypeScript", "Tailwind CSS"],
-      "startDate": "2024.03",
-      "endDate": "2024.06",
+      "name": "슬리드 투두",
+      "description": "목표 설정하고 해당 목표의 할일들을 생성해 목표 달성도를 체크하는 프로젝트",
+      "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "ReactQuery", "Zustand", "React Hook Form"],
+      "startDate": "2026.03",
+      "endDate": "2026.04",
       "links": {
-        "github": "https://github.com/username/project",
-        "demo": ""
+        "github": "https://github.com/heyimcsy/slid-to-do-5team",
+        "demo": "https://slid-to-do-5team.vercel.app"
       },
       "details": [
-        "주요 기능 구현 내용",
-        "트러블슈팅 경험",
-        "성과 및 배운 점"
+        "4명의 팀원구성에서 전체 페이지수 17개중 8개를 맡아 47.06% 를 작업했습니다.",
+        "디스코드에 기능별 채널을 개설하고 GitHub 훅을 연동해 PR 생성·머지·코드리뷰 알림을 자동화하여 리뷰 누락 없이 팀 전원의 코드 변경 사항을 실시간으로 공유했습니다.",
+        "중간 발표 후 고도화 단계에서 수집된 피드백을 노션에 담당자·진행 여부·추가 논의 필요 여부로 구조화하여 관리, 이슈가 방치되지 않는 환경을 구축했습니다.",
+        "할일 API에 찜 여부가 포함되지 않아 목표별 찜 상태 표시를 위해 별도 API 요청이 필요한 구조였습니다. 할일 조회 API와 전체 찜 조회 API를 병렬 호출 후, 해당 목표 내 할일만 필터링하는 공통 훅 개발해 API 수정 전까지 팀원 전원이 할일 조회 시 해당 훅을 공통으로 사용했습니다. 이후 API 구조 변경 시에도 훅 내부의 키값만 수정하면 될 만큼 유지보수성 높은 구조로 설계됐습니다."
+      ]
+    },
+    {
+      "name": "Potato-admin",
+      "description": "의류 쇼핑몰 멀티테넌트 어드민 대시보드",
+      "techStack": ["React", "TypeScript", "React Query", "Java", "Spring Boot", "MySQL"],
+      "startDate": "2025.09",
+      "endDate": "2025.12",
+      "links": {
+        "github": "https://github.com/potatoshop-admin",
+        "demo": "https://potato-admin.shop/fashion-admin"
+      },
+      "details": [
+        "AWS 운영 비용 절감을 위해 홈서버로 재배포 후 , 외부 노출 후 4시간 내 640건의 침입 시도를 탐지했습니다. fail2ban jail 설정을 강화해 공격 차단 임계값 조정 및 차단 IP 자동 이메일 알림 구성으로 방화벽을 더 강화하였습니다.",
+        "10단계 주문 상태 관리 구현하여 (결제완료 → 배송완료 / 취소 ,반품, 교환 포함), 배송완료 시에는 주문 수량에 맞춰 재고 자동 차감 처리하고, 어드민 페이지에서 배송 완료 상태가 되면 화면상 수정 못하도록 적용했습니다.",
+        "할인 상황마다 주문 수익이 달라져 주문 생성 시 상품의 판매가 원가를 OrderItem에 스냅샷으로 저장해 가격 변동이 생겨도 과거 주문 수익을 정확히 집계할 수 있도록 했습니다.",
+        "TanStack React Table의 컬럼 정의(정렬·필터 헤더), 검색(debounce), 컬럼 표시/숨김, 페이지네이션을 ColumnConfig기반 제네릭 팩토리로 추상화했습니다. 총,6개 리스트 페이지에 재사용하여 페이지당 약 85줄의 반복 코드 제거했습니다. (총 약 500줄 감소)"
       ]
     }
   ],
   "education": [
     {
-      "institution": "학교명",
-      "major": "전공명",
+      "institution": "국민대학교",
+      "major": "패션디자인",
       "degree": "학사",
-      "startDate": "2019.03",
-      "endDate": "2023.02",
-      "note": ""
+      "startDate": "2017.03",
+      "endDate": "2022.02",
+      "note": "3.45/4.5"
     }
   ],
   "activities": [
@@ -74,6 +94,13 @@
       "startDate": "2024.01",
       "endDate": "2024.06",
       "description": "프론트엔드 개발 집중 부트캠프 수료"
+    },
+    {
+      "name": "항해 99",
+      "organization": "스파르타 코딩클럽",
+      "startDate": "2023.02",
+      "endDate": "2023.05",
+      "description": "Next.js 13버전 page route 기반으로 ‘만나잔’ 프로젝트 진행. 기수 프로젝트 중 1등"
     }
   ],
   "certificates": [

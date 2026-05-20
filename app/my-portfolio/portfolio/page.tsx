@@ -1,6 +1,7 @@
-import { getAllPortfolios } from "@/lib/content";
+
 import Link from "next/link";
 import Image from "next/image";
+import {getAllPortfolios} from "@/lib/content";
 
 export default function PortfolioPage() {
   const portfolios = getAllPortfolios();
@@ -17,7 +18,7 @@ export default function PortfolioPage() {
           {portfolios.map((p) => (
             <Link
               key={p.slug}
-              href={`/portfolio/${p.slug}`}
+              href={`/my-portfolio/portfolio/${p.slug}`}
               className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition-shadow"
             >
               <div className="relative h-40 bg-gray-100">

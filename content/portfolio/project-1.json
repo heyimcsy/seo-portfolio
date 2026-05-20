@@ -1,5 +1,5 @@
 {
-  "slug": "project-1",
+  "slug": "slid-to-do",
   "title": "slid-to-do",
   "side": "Frontend",
   "summary": "슬리드 투두는 목표를 설정해 해당 목표 속 할일들을 만들어 이루어가면서 목표를 이루어 가는 사이트입니다. ",
@@ -9,7 +9,7 @@
   "endDate": "2026.04",
   "links": {
     "github": "https://github.com/heyimcsy/slid-to-do-5team",
-    "demo": "https://slid-to-do-5team.vercel.app/"
+    "demo": "https://slid-to-do-5team.vercel.app"
   },
   "sections": [
     {

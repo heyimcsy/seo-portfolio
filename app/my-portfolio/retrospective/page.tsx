@@ -1,5 +1,5 @@
-import { getAllRetrospectives } from "@/lib/content";
 import Link from "next/link";
+import {getAllRetrospectives} from "@/lib/content";
 
 export default function RetrospectivePage() {
   const retrospectives = getAllRetrospectives();
@@ -16,7 +16,7 @@ export default function RetrospectivePage() {
           {retrospectives.map((r) => (
             <Link
               key={r.slug}
-              href={`/retrospective/${r.slug}`}
+              href={`/my-portfolio/retrospective/${r.slug}`}
               className="group flex items-center justify-between bg-white rounded-xl border border-gray-200 p-5 hover:shadow-md transition-shadow"
             >
               <div className="space-y-1.5">

@@ -1,8 +1,8 @@
-import { getAllPortfolios, getPortfolioBySlug } from "@/lib/content";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import type { PortfolioSection } from "@/types";
 import Image from "next/image";
+import {getAllPortfolios, getPortfolioBySlug} from "@/lib/content";
+import {PortfolioSection} from "@/types";
 
 export async function generateStaticParams() {
   const portfolios = getAllPortfolios();

@@ -1,8 +1,10 @@
-import { getAllRetrospectives, getRetrospectiveBySlug } from "@/lib/content";
+
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import TiptapViewer from "@/components/retrospective/TiptapViewer";
+
 import Image from "next/image";
+import TiptapViewer from "@/components/retrospective/TiptapViewer";
+import {getAllRetrospectives, getRetrospectiveBySlug} from "@/lib/content";
 
 export async function generateStaticParams() {
   const retrospectives = getAllRetrospectives();

@@ -20,6 +20,7 @@ export default function ProfileImage({ src, name }: { src: string; name: string 
         src={src}
         alt={name}
         fill
+        sizes="96px"
         className="object-cover"
         onError={() => setError(true)}
       />
