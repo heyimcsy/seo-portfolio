@@ -12,7 +12,9 @@
       "mcp__Claude_Preview__preview_start",
       "Bash(npm run *)",
       "Bash(git -C /Users/bicmac/development/seo-portfolio remote -v)",
-      "Bash(find /Users/bicmac/development/potato-admin -name \"docker-compose.yml\" -o -name \"docker-compose.yaml\" -o -name \"Dockerfile\" 2>/dev/null)"
+      "Bash(find /Users/bicmac/development/potato-admin -name \"docker-compose.yml\" -o -name \"docker-compose.yaml\" -o -name \"Dockerfile\" 2>/dev/null)",
+      "Bash(git -C /Users/bicmac/development/seo-portfolio status)",
+      "Bash(git -C /Users/bicmac/development/seo-portfolio log --oneline -5)"
     ]
   }
 }
