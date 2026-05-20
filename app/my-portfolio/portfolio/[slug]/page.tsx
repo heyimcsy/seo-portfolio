@@ -20,7 +20,7 @@ export default async function PortfolioDetailPage({
 
   return (
     <div className="space-y-6">
-      <Link href="/portfolio" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-900">
+      <Link href="/my-portfolio/portfolio" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-900">
         ← 목록으로
       </Link>
 
