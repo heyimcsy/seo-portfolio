@@ -10,7 +10,9 @@
       "Bash(mkdir -p /Users/bicmac/development/seo-portfolio/app/portfolio/\\\\[slug\\\\])",
       "Bash(mkdir -p /Users/bicmac/development/seo-portfolio/.claude)",
       "mcp__Claude_Preview__preview_start",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(git -C /Users/bicmac/development/seo-portfolio remote -v)",
+      "Bash(find /Users/bicmac/development/potato-admin -name \"docker-compose.yml\" -o -name \"docker-compose.yaml\" -o -name \"Dockerfile\" 2>/dev/null)"
     ]
   }
 }
