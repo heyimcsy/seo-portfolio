@@ -1,0 +1,48 @@
+import { Node, mergeAttributes } from "@tiptap/core";
+
+declare module "@tiptap/core" {
+  interface Commands<ReturnType> {
+    video: {
+      setVideo: (options: { src: string }) => ReturnType;
+    };
+  }
+}
+
+export const VideoNode = Node.create({
+  name: "video",
+  group: "block",
+  atom: true,
+
+  addAttributes() {
+    return {
+      src: { default: null },
+    };
+  },
+
+  parseHTML() {
+    return [{ tag: "video[src]" }];
+  },
+
+  renderHTML({ HTMLAttributes }) {
+    return [
+      "video",
+      mergeAttributes(HTMLAttributes, {
+        controls: true,
+        style: "max-width:100%;border-radius:8px;margin:8px 0",
+      }),
+    ];
+  },
+
+  addCommands() {
+    return {
+      setVideo:
+        (options: { src: string }) =>
+        ({ commands }) => {
+          return commands.insertContent({
+            type: this.name,
+            attrs: options,
+          });
+        },
+    };
+  },
+});
