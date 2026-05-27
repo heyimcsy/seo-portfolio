@@ -46,7 +46,8 @@
       "items": [
         "TanStack Table 공통 컴포넌트화 — 주문·상품·회원 등 6개 목록 페이지가 각자 컬럼 정의와 정렬·필터 헤더를 중복 작성하는 구조였습니다. ColumnConfig 배열을 받아 ColumnDef를 반환하는 팩토리 함수(TableColumnsCreate)를 설계해 공통화했고, 페이지당 약 80줄의 반복 코드를 제거했습니다.",
         "배포 서버 타임존 불일치 — 로컬(KST)에서는 대시보드 날짜가 정상이었지만 배포 서버(UTC)에서는 하루 밀려 표시되는 문제가 있었습니다. LocalDateTime.now()가 JVM 시스템 타임존을 따르기 때문임을 파악하고, ZoneId.of(\"Asia/Seoul\")를 명시적으로 지정해 해결했습니다.",
-        "Nginx 업로드 용량 제한 — 이미지 업로드 시 413 에러가 발생했습니다. 요청이 Spring Boot에 도달하기 전에 Nginx에서 차단되는 것을 확인하고, client_max_body_size 20M 설정과 Spring multipart 업로드 제한을 함께 조정해 해결했습니다."
+        "Nginx 업로드 용량 제한 — 이미지 업로드 시 413 에러가 발생했습니다. 요청이 Spring Boot에 도달하기 전에 Nginx에서 차단되는 것을 확인하고, client_max_body_size 20M 설정과 Spring multipart 업로드 제한을 함께 조정해 해결했습니다.",
+        "토큰 운용 방법 변경 - 초기 구현에서 JWT 토큰을 localStorage에 저장하다 XSS 공격으로 인한 탈취 위험을 인지하고, Next.js Route Handler를 인증 프록시로 활용해 토큰을 httpOnly 쿠키로 전환했습니다."
       ]
     },
     {

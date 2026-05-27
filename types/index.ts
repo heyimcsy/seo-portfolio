@@ -8,12 +8,7 @@ export interface BasicInfo {
   location: string;
 }
 
-export interface Skills {
-  frontend: string[];
-  backend: string[];
-  database: string[];
-  tools: string[];
-}
+export type Skills = Record<string, string[]>;
 
 export interface Experience {
   company: string;
