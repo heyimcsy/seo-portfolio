@@ -1,0 +1,241 @@
+{
+  "slug": "2026-05-26-그래도-뿌듯했다",
+  "title": "그래도 뿌듯했다...",
+  "date": "2026-05-26",
+  "tags": [
+    "React",
+    "회고",
+    "shadcn-ui"
+  ],
+  "content": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "작년 나는 Next.js 에 shadcn-ui 기반으로 (추후에 react-native webview 로 올라갈) 병원 예약 페이지를 만들었었다. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "그 전 회사에서는 디자인이 따로 없었던지라..  모든 페이지마다 상세하게 문구와 디자인이 짜여 있음에 즐거움과 행복함을 가지고 100퍼센트의 일치율을 보이겠어 ... 놀라게 하겠어... 라는 마음으로 코드를 짰다. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "헤드리스 타입으로 빠르게 구성해서 작업할 수 있고, 웹 접근성이 좋게 다 짜여나온 shadcn-ui로 작업을 하는데, drawer 부터 일단 커스텀이 많이 들어간채로 작업을 해야했다. (실은 이때도 조금 쫄렸다 ㅎㅎ)"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "문제는 이제 drawer 요소 위에 병원을 예약할 시 요일별로 예약 컴포넌트를 가로 슬라이딩해서 하단에 fixed 로 붙여줘야 하는 부분이었다. "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "drawer, 가로 스크롤의 예약 컴포넌트 둘다 원활하게 작동을 못 하는 것.. "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "drawer와 예약 컴포넌트 둘다 z-index 에 묶인 모달형 컴포넌트이다 보니 , 둘이 분리되어서 자유롭게 원하는대로 동작을 넣어줄 수가 없었다. "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "정확히는 가로 스크롤이 안돼... "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "애꿎은 핸드폰으로만 손가락으로 열심히 가로로 문지르면서 "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "왜.. 왜 안되는 것이야 하고 눈물과 함께 drawer 컴포넌트를 계속 까보고 제공해주는 API 다 넣어보고 했다.. 하지만, 열정으로는 도저히 방법을 찾지 못할 것 같은 마음에 나는 결국 고민하다 집단지성의 힘을 빌려보기로 했다. "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://github.com/shadcn-ui/ui/discussions/7718",
+                  "target": "_blank",
+                  "rel": "noopener noreferrer nofollow",
+                  "class": null,
+                  "title": null
+                }
+              }
+            ],
+            "text": "https://github.com/shadcn-ui/ui/discussions/7718"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "바로 샤드시엔 깃헙 "
+          },
+          {
+            "type": "text",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ],
+            "text": "디스커션에 질문을 올리는 것"
+          },
+          {
+            "type": "text",
+            "text": ".. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "marks": [
+              {
+                "type": "strike"
+              }
+            ],
+            "text": "올리기 전에는 솔직히 나 비웃을까봐 너무 무서웠다."
+          },
+          {
+            "type": "hardBreak",
+            "marks": [
+              {
+                "type": "strike"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "marks": [
+              {
+                "type": "strike"
+              }
+            ],
+            "text": "하지만 나는 완벽하게 만들고 싶었기에! 질수 없었다. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "그후 결론을 말하자면 , 아무도 나한테 답변을 해주지 않아서 해결을 할 수 없었다. "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "하지만, 당시 나랑 같은 고민을 하는 사람이 있는지 , 그리고 혹여 누군가 거기에 답변을 달았을까봐 질문들을 다 찾아보다가 , 다른 사람의 질문을 해결해주는 선행?을 하게 됐다. "
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://github.com/shadcn-ui/ui/discussions/7317",
+                  "target": "_blank",
+                  "rel": "noopener noreferrer nofollow",
+                  "class": null,
+                  "title": null
+                }
+              }
+            ],
+            "text": "https://github.com/shadcn-ui/ui/discussions/7317"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "자세히 보니 내가 이미 고민했던 부분에 대한 고민이었고, 나는 최대한 상세하게 답을 달아줬다. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "작성자와 그 외 다른 누군가가 해당 답변에 좋아요를 눌러줬고, 최소 2명의 고민을 해결해줬다는 것이 너무 뿌듯했다... ㅎㅎ"
+          },
+          {
+            "type": "hardBreak"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "결국 모달 부분은 다른 디자인으로 적용시켜서 진행을 했는데.. 그래도 내가 낸 용기에 누군가는 도움을 받았다는 점이 정말 뿌듯했던 ..  경험이었다. "
+          },
+          {
+            "type": "hardBreak"
+          }
+        ]
+      }
+    ]
+  }
+}
