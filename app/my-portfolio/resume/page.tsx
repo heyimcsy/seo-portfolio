@@ -213,8 +213,9 @@ function categoryLabel(key: string): string {
   const map: Record<string, string> = {
     frontend: "Frontend",
     backend: "Backend",
-    database: "Database",
+    database: "DB",
     tools: "Tools",
+    collaboration: "Collab",
   };
   return map[key] ?? key;
 }
