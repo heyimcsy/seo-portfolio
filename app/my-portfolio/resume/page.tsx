@@ -39,8 +39,8 @@ export default function ResumePage() {
       <Section title="기술 스택">
         <div className="space-y-3">
           {Object.entries(skills).map(([category, items]) => (
-            <div key={category} className="flex flex-wrap items-start gap-2">
-              <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide w-20 pt-1 flex-shrink-0">
+            <div key={category} className="flex items-start space-x-2">
+              <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide w-30 pt-1 flex-shrink-0">
                 {categoryLabel(category)}
               </span>
               <div className="flex flex-wrap gap-2">
@@ -215,7 +215,7 @@ function categoryLabel(key: string): string {
     backend: "Backend",
     database: "DB",
     tools: "Tools",
-    collaboration: "Collab",
+      collaboration: "Collaboration",
   };
   return map[key] ?? key;
 }
