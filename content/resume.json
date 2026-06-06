@@ -8,46 +8,46 @@
     "blog": "",
     "location": "서울"
   },
-  "introduction": "React · TypeScript · Next.js 기반으로 웹 서비스와 어드민 화면을 개발해 온 프론트엔드 개발자입니다.\n티라로보틱스 FMS에서 프론트엔드 버그 154건을 분석·수정하고, Three.js/Canvas 기반 3D 맵 이미지 편집 기능을 구현했습니다.\n최근에는 API 스펙 변경 대응, 공통 훅 설계, TanStack Table 추상화 등 운영·유지보수성을 높이는 작업과 함께,\ndebounce · 무한 스크롤 적용으로 불필요한 API 호출을 줄이는 성능 최적화에도 집중하고 있습니다.",
+  "introduction": "React · TypeScript · Next.js 기반으로 웹 서비스와 어드민 화면을 개발해 온 프론트엔드 개발자입니다.\n티라로보틱스 FMS에서 프론트엔드 버그 154건을 분석·수정하고, Three.js/Canvas 기반 3D 맵 이미지 편집 기능을 구현했습니다.\nAPI 스펙 변경 대응, 공통 훅 설계, TanStack Table 추상화 등 운영·유지보수성을 높이는 작업과 함께,\ndebounce · 무한 스크롤 적용으로 불필요한 API 호출을 줄이는 성능 최적화까지 경험을 쌓았습니다.",
   "skills": {
-    "frontend": ["React", "TypeScript", "Next.js", "HTML/CSS", "Tanstack Query", "Zustand", "React Hook Form", "zod", "Tanstack Table", "Three.js", "Canvas", "TDD"],
+    "frontend": ["React", "TypeScript", "Next.js", "HTML/CSS", "TanStack Query", "Zustand", "React Hook Form", "Zod", "TanStack Table", "Three.js", "Canvas", "TDD", "Shadcn"],
     "backend": ["Java", "Spring Boot", "Node.js", "MySQL", "PostgreSQL"],
-    "tools": ["Git", "GitHub", "GitLab", "GitHub Actions"]
+    "collaboration": ["Git", "GitHub", "GitLab", "GitHub Actions"]
   },
   "experiences": [
     {
       "company": "(주)사고링크",
-      "position": "프론트엔드 개발자 (사원)",
+      "position": "프론트엔드 개발자 / 사원",
       "startDate": "2025.06",
       "endDate": "2025.08",
-      "description": "사고와 상해를 입은 사용자가 편하게 손해배상을 청구하고 받을 수 있도록 해주는 사업의 회사입니다.",
+      "description": "사고 · 상해를 입은 피해자의 손해배상 청구를 돕는 서비스입니다.",
       "achievements": [
+        "shadcn/ui Drawer의 pointer-events 동작을 분석하여 sticky 컨테이너 인터랙션 문제를 해결했고, 재현 조건과 해결책을 shadcn/ui 공식 GitHub Discussion에 공유했습니다.",
         "병원 전체 조회 API만 제공되던 상황에서 Zustand 기반 클라이언트 캐시 구조를 설계하고, 단일 병원 조회·정렬·필터 UI를 프론트엔드에서 구현했습니다. API 스펙 변경 후 2일 내 반영해 일정 지연 없이 완료했습니다.",
-        "shadcn/ui Drawer의 pointer-events 동작을 분석하여 sticky 컨테이너 인터랙션 문제를 해결했고, 동일한 이슈를 겪는 외부 개발자의 공식 GitHub Discussion에 해결책을 공유했습니다.",
         "카카오맵 API 연동 시 지도 이동 이벤트마다 API가 과호출되지 않도록 500ms debounce를 적용해 불필요한 호출을 억제하고 비용을 절감했습니다. 렌더링 중 이미지 깨짐 현상도 함께 수정했습니다.",
         "신규 페이지 개발 중 Header·Footer가 매 페이지마다 하드코딩되어 불필요한 리렌더링이 발생함을 발견, 루트 레이아웃 단에서 공통 컴포넌트화하여 단일 마운트로 개선했습니다. Header는 경로 조건 분기로 nav 노출 여부를 제어해 예외 케이스도 유연하게 처리했습니다."
       ]
     },
     {
       "company": "(주)티라로보틱스",
-      "position": "프론트엔드 개발자",
+      "position": "프론트엔드 개발자 / 프로",
       "startDate": "2023.09",
       "endDate": "2024.11",
       "description": "AMR(Autonomous Mobile Robot, 자율주행 물류로봇)을 개발하는 회사입니다.",
       "achievements": [
         "FMS 전체 버그 개선 프로젝트에서 프론트엔드 영역 버그 154개를 단독으로 배정받아, 일부 화면은 전면 재설계하는 방식으로 접근해 1개월 반 만에 전량 수정 완료했습니다.",
-        "3D 맵 위에 사용자가 직접 라인·다각형 구역을 그리고 편집해야 하는 요구사항을 Three.js + Canvas로 구현했습니다. 좌표 기반 객체 추가·삭제·수정이 실시간으로 반영되는 편집 기능을 담당했습니다.",
+        "3D 맵 위에 사용자가 직접 라인·다각형 구역을 그리고 편집해야 하는 요구사항을 Three.js로 구현했습니다. 좌표 기반 객체 추가·삭제·수정이 실시간으로 반영되는 편집 기능을 담당했습니다.",
         "Three.js 씬 조작이 빈번한 환경에서 리렌더링마다 키보드 이벤트 핸들러가 재생성되어 리스너가 불필요하게 교체되는 문제를 발견하고, useCallback으로 핸들러를 안정화해 리스너 누수를 방지했습니다.",
         "Vue.js를 모르는 상태에서 입사 3개월 차에 외주 페이지 2개를 3주 기한으로 단독 배정받아, 당일 자가 학습을 시작하고 기존 코드 스타일에 맞춰 기한 내 완료했습니다.",
-        "Zone Management 페이지 개발 시 3개 분량의 기능이 단일 화면에 집약되어 사용성이 저하된 구조를 발견했습니다. 직접 화면 도안과 흐름을 설계하여 담당자에게 선제안했고, 검토 후 채택되어 해당 설계안 기준으로 구현했습니다."
+        "Zone Management 페이지 개발 시 3개 기능이 단일 화면에 집약되어 사용성이 저하된 구조를 발견했습니다. 직접 화면 도안과 흐름을 설계하여 담당자에게 선제안했고, 검토 후 채택되어 해당 설계안 기준으로 구현했습니다."
       ]
     }
   ],
   "projects": [
     {
       "name": "슬리드 투두",
-      "description": "목표 설정하고 해당 목표의 할 일들을 생성해 목표 달성도를 체크하는 프로젝트 (팀리더/프론트엔드)",
-      "techStack": ["Next.js", "TypeScript", "zod", "React Hook Form", "Tanstack Query", "Zustand", "codeRabbit"],
+      "description": "목표를 설정하고 목표별 할 일을 생성해 달성도를 관리하는 프로젝트 (팀리더/프론트엔드)",
+      "techStack": ["Next.js", "TypeScript", "Zod", "React Hook Form", "TanStack Query", "Zustand", "Shadcn", "codeRabbit"],
       "startDate": "2026.03",
       "endDate": "2026.04",
       "links": {
@@ -56,7 +56,7 @@
       },
       "details": [
         "4명의 팀원 구성에서 전체 17페이지 중 8페이지를 담당해 작업했습니다.",
-        "할 일 API에 찜 여부가 포함되지 않아 할 일 조회 API와 전체 찜 조회 API를 병렬 호출하고, 해당 목표 내 할 일만 필터링해 맵핑하는 공통 훅을 설계했습니다. 이후 API 구조 변경 시에도 훅 내부의 키값만 수정하게 하여 팀 공통 조회 로직의 변경 비용을 낮췄습니다.",
+        "할 일 API에 찜 여부가 포함되지 않아 할 일 조회 API와 전체 찜 조회 API를 병렬 호출하고, 해당 목표 내 할 일만 필터링해 매핑하는 공통 훅을 설계했습니다. 이후 API 구조 변경 시에도 훅 내부의 키값만 수정하게 하여 팀 공통 조회 로직의 변경 비용을 낮췄습니다.",
         "Goal 상세 칸반보드의 전체 할 일을 일괄 로드하던 방식을 무한 스크롤로 전환해 초기 렌더링 비용 절감 및 대용량 데이터 환경에서의 성능을 개선했습니다.",
         "찜하기·할 일 체크에 debounce 공통 훅을 적용해 연속 클릭 시 API 과호출을 막고, ReactQuery 낙관적 업데이트로 즉각적인 UI 반응과 데이터 정합성을 확보했습니다.",
         "GitHub 웹훅을 연동해 PR 생성·머지·코드 리뷰 알림을 자동화하여 팀 전원의 코드 변경 사항을 실시간으로 공유했습니다.",
@@ -66,7 +66,7 @@
     {
       "name": "포테이토 어드민",
       "description": "의류 쇼핑몰 멀티테넌트 어드민 대시보드 (개인 프로젝트 / 풀스택)",
-      "techStack": ["Next.js", "TypeScript", "Tanstack Query", "Tanstack Table", "shadcn/ui", "Java", "Spring Boot", "MySQL"],
+      "techStack": ["Next.js", "TypeScript", "TanStack Query", "TanStack Table", "Shadcn", "Java", "Spring Boot", "MySQL"],
       "startDate": "2025.09",
       "endDate": "2025.12",
       "links": {
@@ -77,8 +77,7 @@
         "TanStack Table의 컬럼 정의(정렬·필터 헤더), 검색(debounce), 컬럼 표시/숨김, 페이지네이션을 ColumnConfig 기반 제네릭 팩토리로 추상화했습니다. 총 6개 리스트 페이지에 재사용하여 페이지당 약 85줄의 반복 코드를 제거했습니다. (약 500줄 감소)",
         "useMemo/useCallback으로 테이블 컬럼 정의와 클릭 핸들러의 불필요한 재생성을 방지하고, useEffect + setState 패턴을 useMemo로 대체하여 불필요한 렌더 사이클을 제거했습니다.",
         "초기 구현에서 JWT 토큰을 localStorage에 저장하다 XSS 공격으로 인한 탈취 위험을 인지하고, Next.js Route Handler를 인증 프록시로 활용해 토큰을 httpOnly 쿠키로 전환했습니다.",
-        "10단계 주문 상태 전이를 정의하고, 배송 완료 상태에서는 재고 자동 차감 및 어드민 수정 제한을 적용해 주문·재고 데이터 정합성을 유지했습니다.",
-        "AWS 운영 비용 절감을 위해 홈서버로 재배포 후, 외부 노출 4시간 내 640건의 침입 시도를 탐지했습니다. fail2ban jail 설정 강화 및 차단 IP 자동 이메일 알림으로 방화벽을 더 강화했습니다."
+        "10단계 주문 상태 전이를 정의하고, 배송 완료 상태에서는 재고 자동 차감 및 어드민 수정 제한을 적용해 주문·재고 데이터 정합성을 유지했습니다."
       ]
     }
   ],

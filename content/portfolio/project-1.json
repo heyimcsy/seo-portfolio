@@ -4,7 +4,7 @@
   "side": "팀리더 / Frontend",
   "summary": "목표를 설정하고 해당 목표 속 할 일들을 만들어 달성도를 관리하는 서비스입니다.",
   "thumbnail": "/images/potatoSlidtodo.jpeg",
-  "techStack": ["Next.js", "TypeScript", "zod", "React Hook Form", "Tanstack Query", "Zustand", "codeRabbit", "Tailwind CSS"],
+  "techStack": ["Next.js", "TypeScript", "Zod", "React Hook Form", "TanStack Query", "Zustand", "Shadcn", "codeRabbit"],
   "startDate": "2026.03",
   "endDate": "2026.04",
   "links": {
