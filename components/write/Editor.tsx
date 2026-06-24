@@ -15,8 +15,6 @@ import Toolbar from "./Toolbar";
 import { useState, useCallback } from "react";
 import { Copy, Check, Download } from "lucide-react";
 
-const BASE_PATH = "/my-portfolio";
-
 export default function Editor() {
   const [title, setTitle] = useState("");
   const [tags, setTags] = useState("");
@@ -48,7 +46,7 @@ export default function Editor() {
     const formData = new FormData();
     formData.append("file", file);
 
-    const res = await fetch(`${BASE_PATH}/api/upload`, { method: "POST", body: formData });
+    const res = await fetch(`/api/upload`, { method: "POST", body: formData });
     if (!res.ok) {
       alert("업로드 실패");
       return null;
